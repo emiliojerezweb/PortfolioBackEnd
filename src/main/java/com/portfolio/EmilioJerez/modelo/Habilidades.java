@@ -11,17 +11,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Setter @Getter
-@Table (name="persona")
-public class Persona {
+@Getter @Setter
+@Table (name="habilidad")
+public class Habilidades {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column
     private String nombre;
-    private String apellido;
-    private String telefono;
-    private String email;
-    private String direccion;
-    private String descripcion;
 }
