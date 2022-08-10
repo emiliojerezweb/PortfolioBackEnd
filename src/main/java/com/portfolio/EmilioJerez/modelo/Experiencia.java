@@ -26,8 +26,6 @@ public class Experiencia {
     private String empresa;
     private String puesto;
     private String tarea;
-    @Temporal(TemporalType.DATE)
-    private java.util.Calendar fec_ini;
-    @Temporal(TemporalType.DATE)
-    private java.util.Calendar fecha_fin;
+    private String anio_inicio; 
+    private String anio_fin;
 }

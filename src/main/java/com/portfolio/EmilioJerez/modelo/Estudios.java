@@ -22,8 +22,6 @@ public class Estudios {
     @Column
     private String titulo;
     private String institucuion;
-    @Temporal(TemporalType.DATE)
-    private java.util.Calendar ini_estudio;
-    @Temporal(TemporalType.DATE)
-    private java.util.Calendar fin_estudio;
+    private String anio_inicio;
+    private String anio_fin;
 }
