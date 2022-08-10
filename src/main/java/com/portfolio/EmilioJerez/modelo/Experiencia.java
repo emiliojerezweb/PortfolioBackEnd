@@ -10,8 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,6 +24,6 @@ public class Experiencia {
     private String empresa;
     private String puesto;
     private String tarea;
-    private String anio_inicio; 
-    private String anio_fin;
+    private String fecha_inicio; 
+    private String fecha_fin;
 }

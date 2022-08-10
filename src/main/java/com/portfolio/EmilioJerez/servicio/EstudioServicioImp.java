@@ -31,7 +31,7 @@ public class EstudioServicioImp implements EstudioServicio {
     }
 
     @Override
-    public Estudios editarEstudio(Estudios estudio, Long id){
+    public Estudios editarEstudio(Estudios estudio){
         
         return EstuRepo.save(estudio);
     }

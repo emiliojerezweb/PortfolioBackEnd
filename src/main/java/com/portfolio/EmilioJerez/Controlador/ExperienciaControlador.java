@@ -1,8 +1,8 @@
 
 package com.portfolio.EmilioJerez.Controlador;
 
-import com.portfolio.EmilioJerez.modelo.Estudios;
-import com.portfolio.EmilioJerez.servicio.EstudioServicio;
+import com.portfolio.EmilioJerez.modelo.Experiencia;
+import com.portfolio.EmilioJerez.servicio.ExperienciaServicio;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,34 +16,34 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin( origins =  "http://localhost:4200")
-public class EstudioControlador {
+public class ExperienciaControlador {
     
     @Autowired
-    private EstudioServicio estudioServ;
+    private ExperienciaServicio expServ;
     
-    @GetMapping("/portfolio/estudio")
-    public  List<Estudios> verTotalEstudios(){
+    @GetMapping("/portfolio/experiencia")
+    public  List<Experiencia> verTotalExperiencias(){
         
-        return estudioServ.verTodosEstudios();
+        return expServ.verTodasExperiencias();
     }
     
-    @GetMapping("/portfolio/estudio/{id}")
-    public Estudios verUnEstudio(@PathVariable Long id){
-         return estudioServ.verEstudiosId(id);
+    @GetMapping("/portfolio/experiencia/{id}")
+    public Experiencia verUnExperiencia(@PathVariable Long id){
+         return expServ.verExpPorId(id);
     }
     
-    @PostMapping("/portfolio/estudio/crear")
-    public Estudios crearEstudio(@RequestBody Estudios estudio){
-        return estudioServ.crearEstudio(estudio);
+    @PostMapping("/portfolio/experiencia/crear")
+    public Experiencia crearExperiencia(@RequestBody Experiencia exp){
+        return expServ.crearExperiencia(exp);
     }
     
     @PutMapping("/portfolio/estudio/editar")
-    public Estudios actualizarEstudio (@RequestBody Estudios estudio){
+    public Experiencia actualizarEstudio (@RequestBody Experiencia exp){
         
-        return estudioServ.crearEstudio(estudio);
+        return expServ.crearExperiencia(exp);
  }
     @DeleteMapping("/portfolio/estudio/borrar/{id}")
         public void borrarEstudio( @PathVariable Long id){
-            estudioServ.borrarEstudioId(id);
+            expServ.borrarExpPorId(id);
     }
 }

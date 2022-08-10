@@ -13,7 +13,7 @@ public interface EstudioServicio {
     
     public void borrarEstudioId(Long id);
     
-    public Estudios editarEstudio(Estudios  estudio, Long id);
+    public Estudios editarEstudio(Estudios  estudio);
     
     public Estudios crearEstudio(Estudios estudio);
     
