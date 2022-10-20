@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin( origins =  "http://localhost:4200")
 public class ExperienciaControlador {
     
     @Autowired
@@ -38,12 +37,12 @@ public class ExperienciaControlador {
     }
     
     @PutMapping("/portfolio/estudio/editar")
-    public Experiencia actualizarEstudio (@RequestBody Experiencia exp){
+    public Experiencia actualizarExperiencia (@RequestBody Experiencia exp){
         
         return expServ.crearExperiencia(exp);
  }
     @DeleteMapping("/portfolio/estudio/borrar/{id}")
-        public void borrarEstudio( @PathVariable Long id){
+        public void borrarExperiencia( @PathVariable Long id){
             expServ.borrarExpPorId(id);
     }
 }

@@ -19,4 +19,14 @@ public class Habilidades {
     private Long id;
     @Column
     private String nombre;
+
+    public Habilidades() {
+    }
+
+    public Habilidades(Long id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+    
+ 
 }

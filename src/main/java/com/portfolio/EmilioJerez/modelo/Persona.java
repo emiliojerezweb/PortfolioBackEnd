@@ -24,4 +24,21 @@ public class Persona {
     private String email;
     private String direccion;
     private String descripcion;
+
+    public Persona() {
+    }
+
+    public Persona(Long id, String nombre, String apellido, String telefono, String email, String direccion, String descripcion) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+        this.email = email;
+        this.direccion = direccion;
+        this.descripcion = descripcion;
+    }
+    
+    
 }
+
+

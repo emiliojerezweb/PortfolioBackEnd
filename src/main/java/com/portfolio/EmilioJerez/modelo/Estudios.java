@@ -22,4 +22,17 @@ public class Estudios {
     private String institucuion;
     private String anio_inicio;
     private String anio_fin;
+        
+    public Estudios() {
+    }
+
+    public Estudios(Long id, String titulo, String institucuion, String anio_inicio, String anio_fin) {
+        this.id = id;
+        this.titulo = titulo;
+        this.institucuion = institucuion;
+        this.anio_inicio = anio_inicio;
+        this.anio_fin = anio_fin;
+    }
+    
+    
 }

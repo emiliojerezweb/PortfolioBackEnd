@@ -26,4 +26,18 @@ public class Experiencia {
     private String tarea;
     private String fecha_inicio; 
     private String fecha_fin;
+
+    public Experiencia() {
+    }
+
+    public Experiencia(Long id, String empresa, String puesto, String tarea, String fecha_inicio, String fecha_fin) {
+        this.id = id;
+        this.empresa = empresa;
+        this.puesto = puesto;
+        this.tarea = tarea;
+        this.fecha_inicio = fecha_inicio;
+        this.fecha_fin = fecha_fin;
+    }
+    
+    
 }

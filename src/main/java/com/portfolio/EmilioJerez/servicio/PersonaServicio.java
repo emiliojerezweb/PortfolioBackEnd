@@ -9,5 +9,5 @@ public interface PersonaServicio {
     
     public List<Persona> verPersona();
     
-    public void guardarPersona(Persona perso);
+    public Persona guardarPersona(Persona perso);
 }
